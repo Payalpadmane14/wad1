@@ -1,0 +1,116 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile: Theme Download</title>
+	<link rel="stylesheet" href="themes/swatch.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="page" data-theme="a">
+        <div data-role="header" data-position="inline">
+            <div data-role="header">
+                <h1>Mobile Websites</h1>
+            </div>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page">Home</a></li>
+                    <li><a href="#page1">Fill Form</a></li>
+                    <li><a href="#page2">About Us</a></li>
+                </ul>
+            </div>
+            <div data-role="main" style="text-align: center; ">
+                <h3>welcome to Home page</h3>
+                <h4>TCH counsaltancy</h4>
+                <img src="download.jpeg" alt="">
+            </div>
+            <div data-role="footer">
+                <h3>copyright @tch2024</h3>
+            </div>
+        </div>
+
+    </div>
+    <div data-role="page" id="page1" data-theme="b">
+        <div data-role="header">
+            <h1>Mobile Websites</h1>
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#page">Home</a></li>
+                <li><a href="#page1">Fill Form</a></li>
+                <li><a href="#page2">About Us</a></li>
+            </ul>
+        </div>
+        <div data-role="main">
+            <h3>Are you ready to be part of TCH counsaltancy?</h3>
+            <h4>TCH counsaltancy</h4>
+            <label for="">Enter Name</label>
+            <input type="text">
+
+            <label for="">Enter Email</label>
+            <input type="email">
+
+            <fieldset data-role="controlgroup">
+                <legend>Gender:</legend>
+                <input type="radio" name="gender" id="male" value="male" checked>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+            </fieldset>
+
+            <label for="expertise" style="text-align: left;">Choose your expertise</label>
+            <select name="expertise" style="text-align: left;" id="expertise">
+                <option value="">choose an expertise</option>
+                <option value="UI-UX">UI-UX</option>
+                <option value="Frontend">Frontend</option>
+                <option value="Backend">Backend</option>
+                <option value="Database management">Database management</option>
+                <option value="Data analysis">Data analysis</option>
+            </select>
+            
+
+            <label for="flip-1">Have an engineering degree?</label>
+            <select name="flip-1" id="flip-1" data-role="flipswitch">
+                <option value="off">Yes</option>
+                <option value="on">No</option>
+            </select>
+
+            <label for="range-1a">Rate your work:</label>
+            <input type="range" name="range-1a" id="range-1a" min="0" max="5" value="0">
+            <a href="#page" style="text-decoration: none;"><button>Submit</button> </a>
+        </div>
+        <div data-role="footer">
+            <h3>copyright @tch2024</h3>
+        </div>
+    </div>
+    <div data-role="page" id="page2" data-theme="c">
+        <div data-role="header">
+            <h1>Mobile Websites</h1>
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#page">Home</a></li>
+                <li><a href="#page1">Fill Form</a></li>
+                <li><a href="#page2">About Us</a></li>
+            </ul>
+        </div>
+        <div data-role="main">
+            <h4>All about TCH Counsaltancy</h4>
+            <p> dicta quo error ipsum. Dicta accusantium soluta sapiente
+                consequuntur eos pariatur beatae fuga iste reprehenderit! Consequatur, amet architecto quaerat vero
+                facere omnis placeat officia quia facilis consectetur praesentium. Fugiat quas enim tenetur aliquam
+                tempora repellendus delectus amet nemo quos esse qui obcaecati eligendi quidem vitae perferendis magnam
+                nam, reprehenderit, dicta reiciendis cum eaque nihil nesciunt! Iste voluptas odit in cumque optio
+                deleniti, quisquam quis eveniet incidunt.</p>
+        </div>
+        <div data-role="footer">
+            <h3>copyright @tch2024</h3>
+        </div>
+    </div>
+</body>
+
+</html>

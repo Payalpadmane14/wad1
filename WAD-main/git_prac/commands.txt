@@ -1,0 +1,201 @@
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ ls
+commands.txt
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/dell/Desktop/WAD2/.git/
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git remote add origin https://github.com/Aditi810/WAD-Web-Application-Development.git
+error: remote origin already exists.
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git remote -v
+origin  https://github.com/Aditi810/WAD-Web-Application-Development.git (fetch)
+origin  https://github.com/Aditi810/WAD-Web-Application-Development.git (push)
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git add .
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git commit -m "first commit"
+On branch master
+nothing to commit, working tree clean
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 214 bytes | 214.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Aditi810/WAD-Web-Application-Development/pull/new/master
+remote:
+remote: Heads up! The branch 'master' that you pushed to was renamed to 'main'.
+remote:
+To https://github.com/Aditi810/WAD-Web-Application-Development.git
+ * [new branch]      master -> master
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git commit -m "modified"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git push origin master
+Everything up-to-date
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git add .
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git commit -m "modified"
+[master 4174e9b] modified
+ 1 file changed, 39 insertions(+)
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 748 bytes | 748.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Aditi810/WAD-Web-Application-Development.git
+   1f5bfd6..4174e9b  master -> master
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git branch
+* master
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git branch sample
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git branch
+* master
+  sample
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git checkout sample
+Switched to branch 'sample'
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (sample)
+$ git branch
+  master
+* sample
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (sample)
+$ touch sample.txt
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (sample)
+$ git status
+On branch sample
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sample.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (sample)
+$ git add .
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (sample)
+$ git status
+On branch sample
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   sample.txt
+
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (sample)
+$ git commit -m "branch demo"
+[sample 79b9b16] branch demo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 sample.txt
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (sample)
+$ git status
+On branch sample
+nothing to commit, working tree clean
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (sample)
+$ git push -u origin sample
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 277 bytes | 277.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'sample' on GitHub by visiting:
+remote:      https://github.com/Aditi810/WAD-Web-Application-Development/pull/new/sample
+remote:
+To https://github.com/Aditi810/WAD-Web-Application-Development.git
+ * [new branch]      sample -> sample
+branch 'sample' set up to track 'origin/sample'.
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (sample)
+$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (sample)
+$ git checkout master
+Switched to branch 'master'
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git merge sample
+Updating 4174e9b..79b9b16
+Fast-forward
+ sample.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 sample.txt
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Aditi810/WAD-Web-Application-Development.git'
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git push -u origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Aditi810/WAD-Web-Application-Development.git
+   4174e9b..79b9b16  master -> master
+branch 'master' set up to track 'origin/master'.
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git branch -d sample
+Deleted branch sample (was 79b9b16).
+
+dell@PETROL-HEAD MINGW64 ~/Desktop/WAD2 (master)
+$ git push origin --delete sample
+To https://github.com/Aditi810/WAD-Web-Application-Development.git
+ - [deleted]         sample
+
